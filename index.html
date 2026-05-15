@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legal Appendix: In the Matter of the ICC Arrest Warrant Against Dela Rosa | The Anglophone Blind Spot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* ── DESIGN TOKENS ── */
+  :root {
+    --ink:       #1a1a18;
+    --red:       #A32D2D;
+    --bg:        #fafaf7;
+    --bg-warm:   #f4f3ee;
+    --bg-dark:   #141412;
+    --rule:      #d6d4cc;
+    --muted:     #6b6860;
+    --ghost:     rgba(163,45,45,0.07);
+    --max-w:     760px;
+    --wide-w:    1020px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 18px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── MASTHEAD ── */
+  .masthead {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--ink);
+    color: var(--bg);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 2rem; height: 52px;
+    border-bottom: 3px solid var(--red);
+  }
+  .masthead-pub {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--bg); text-decoration: none; opacity: 0.92;
+  }
+  .masthead-nav { display: flex; align-items: center; gap: 1.6rem; }
+  .masthead-nav a {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--bg); text-decoration: none; opacity: 0.7; transition: opacity 0.2s;
+  }
+  .masthead-nav a:hover { opacity: 1; }
+  .masthead-nav .subscribe-btn {
+    background: var(--red); color: #fff;
+    padding: 0.3rem 0.85rem; border-radius: 2px;
+    opacity: 1; font-size: 0.65rem; letter-spacing: 0.12em;
+  }
+  .masthead-nav .subscribe-btn:hover { background: #8a2424; }
+
+  /* ── COVER ── */
+  .cover {
+    max-width: var(--wide-w);
+    margin: 0 auto; padding: 4rem 2rem 3rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--red); margin-bottom: 1rem;
+  }
+  .cover h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    font-weight: 900; line-height: 1.1; letter-spacing: -0.01em;
+    color: var(--ink); max-width: 860px; margin-bottom: 1rem;
+  }
+  .cover h1 em { font-style: italic; color: var(--red); }
+  .deck {
+    font-size: 1.05rem; line-height: 1.6; color: var(--muted);
+    max-width: 660px; margin-bottom: 2rem; font-weight: 300;
+  }
+  .byline-row { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+  .byline {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted);
+  }
+  .byline strong { color: var(--ink); }
+  .doc-tag {
+    font-family: 'JetBrains Mono', monospace; font-size: 0.65rem;
+    background: var(--red); color: #fff;
+    padding: 0.2rem 0.7rem; border-radius: 2px; letter-spacing: 0.1em; text-transform: uppercase;
+  }
+
+  /* ── CASE METADATA TABLE ── */
+  .case-meta {
+    max-width: var(--max-w); margin: 2.5rem auto 0; padding: 0 2rem;
+  }
+  .case-meta-inner {
+    border: 1px solid var(--rule);
+    border-top: 3px solid var(--red);
+  }
+  .case-meta-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--red); padding: 0.8rem 1.2rem 0.4rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .case-meta-row {
+    display: flex; border-bottom: 1px solid var(--rule);
+  }
+  .case-meta-row:last-child { border-bottom: none; }
+  .case-meta-key {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--muted); background: var(--bg-warm);
+    padding: 0.5rem 1rem; min-width: 180px; flex-shrink: 0;
+    display: flex; align-items: center;
+    border-right: 1px solid var(--rule);
+  }
+  .case-meta-val {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem; color: var(--ink);
+    padding: 0.5rem 1rem; display: flex; align-items: center;
+  }
+
+  /* ── KEY FINDINGS ── */
+  .key-findings {
+    background: var(--ink); color: var(--bg);
+    max-width: var(--max-w); margin: 2.5rem auto 0; padding: 0 2rem;
+  }
+  .key-findings-inner { padding: 1.8rem 2rem; }
+  .key-findings-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--red); margin-bottom: 1rem;
+  }
+  .key-findings ul { list-style: none; padding: 0; }
+  .key-findings ul li {
+    padding: 0.55rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);
+    font-size: 0.92rem; line-height: 1.55;
+    padding-left: 1.2rem; position: relative;
+    color: rgba(250,250,247,0.88);
+  }
+  .key-findings ul li:last-child { border-bottom: none; }
+  .key-findings ul li::before {
+    content: '—'; position: absolute; left: 0;
+    color: var(--red); font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* ── TOC ── */
+  .toc-wrapper { max-width: var(--max-w); margin: 2.5rem auto 0; padding: 0 2rem; }
+  .toc {
+    background: var(--bg-warm); border-left: 3px solid var(--red);
+    padding: 1.4rem 1.8rem;
+  }
+  .toc-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--red); margin-bottom: 0.8rem;
+  }
+  .toc ol { list-style: none; counter-reset: toc-counter; padding: 0; }
+  .toc ol li {
+    counter-increment: toc-counter;
+    display: flex; align-items: baseline; gap: 0.6rem;
+    padding: 0.22rem 0; border-bottom: 1px solid var(--rule);
+  }
+  .toc ol li:last-child { border-bottom: none; }
+  .toc ol li::before {
+    content: counter(toc-counter, upper-roman);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem; color: var(--red); opacity: 0.7; min-width: 28px;
+  }
+  .toc ol li a {
+    font-family: 'Source Serif 4', serif;
+    font-size: 0.88rem; color: var(--ink); text-decoration: none; line-height: 1.4;
+  }
+  .toc ol li a:hover { color: var(--red); text-decoration: underline; }
+
+  /* ── ARTICLE BODY ── */
+  .article-body {
+    max-width: var(--max-w); margin: 0 auto; padding: 3rem 2rem 4rem;
+  }
+
+  /* Section headers */
+  .section-block { margin: 3.5rem 0 0; position: relative; }
+  .section-ghost {
+    font-family: 'Playfair Display', serif;
+    font-size: 6.5rem; font-weight: 900;
+    color: var(--ghost); line-height: 1;
+    position: absolute; top: -2rem; left: -1.5rem;
+    user-select: none; pointer-events: none; letter-spacing: -0.04em;
+  }
+  .section-header { position: relative; padding-top: 0.5rem; margin-bottom: 1.4rem; }
+  .section-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--red); display: block; margin-bottom: 0.4rem;
+  }
+  .section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem; font-weight: 700; line-height: 1.2; color: var(--ink);
+  }
+  .section-rule { border: none; border-top: 1px solid var(--rule); margin: 3rem 0; }
+
+  /* Body copy */
+  .article-body p { margin-bottom: 1.4rem; font-size: 0.98rem; line-height: 1.82; }
+
+  /* ── LEGAL-SPECIFIC COMPONENTS ── */
+
+  /* Defence block */
+  .defence-block {
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--red);
+    margin: 2.8rem 0 0;
+    overflow: hidden;
+  }
+  .defence-header {
+    background: var(--ink);
+    padding: 0.9rem 1.4rem;
+    display: flex; align-items: baseline; gap: 1rem;
+  }
+  .defence-number {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--red); white-space: nowrap; flex-shrink: 0;
+  }
+  .defence-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.02rem; font-weight: 700; color: #fafaf7;
+    line-height: 1.3; font-style: italic;
+  }
+  .defence-body { padding: 1.4rem 1.6rem; }
+  .defence-body p { font-size: 0.95rem !important; margin-bottom: 1.1rem !important; }
+  .defence-body p:last-child { margin-bottom: 0 !important; }
+
+  /* Argument vs refutation sub-labels */
+  .sub-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--red); margin-bottom: 0.5rem; display: block; margin-top: 1rem;
+  }
+  .sub-label:first-child { margin-top: 0; }
+
+  /* Holding stamp */
+  .holding {
+    background: var(--bg-warm);
+    border-top: 1px solid var(--rule);
+    padding: 0.8rem 1.6rem;
+    display: flex; gap: 0.8rem; align-items: baseline;
+  }
+  .holding-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--red); white-space: nowrap; flex-shrink: 0;
+    padding-top: 0.05rem;
+  }
+  .holding-text {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem; color: var(--ink); line-height: 1.5;
+  }
+
+  /* Citation rail */
+  .citation {
+    border-left: 3px solid var(--red);
+    padding: 0.7rem 0 0.7rem 1.4rem;
+    margin: 1.2rem 0;
+    font-style: italic;
+    color: #3a3a38;
+    font-size: 0.93rem !important;
+    line-height: 1.65 !important;
+  }
+
+  /* Callout */
+  .callout {
+    background: rgba(163,45,45,0.06);
+    border-left: 3px solid var(--red);
+    padding: 1rem 1.4rem; margin: 2rem 0;
+  }
+  .callout p { font-style: italic; color: var(--ink); font-size: 0.95rem !important; margin-bottom: 0 !important; }
+
+  /* Pull quote */
+  .pull-quote {
+    border-left: 4px solid var(--red);
+    margin: 2.2rem 0; padding: 0.8rem 0 0.8rem 1.6rem;
+  }
+  .pull-quote p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem !important; font-style: italic;
+    line-height: 1.5 !important; color: var(--ink); margin-bottom: 0 !important;
+  }
+
+  /* Authority tables */
+  .auth-table {
+    width: 100%; border-collapse: collapse;
+    margin: 1.2rem 0; font-size: 0.83rem;
+  }
+  .auth-table thead th {
+    background: var(--ink); color: #fafaf7;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase;
+    padding: 0.55rem 0.9rem; text-align: left;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .auth-table tbody tr:nth-child(even) { background: var(--bg-warm); }
+  .auth-table tbody td {
+    padding: 0.5rem 0.9rem;
+    border: 1px solid var(--rule);
+    vertical-align: top; line-height: 1.5;
+    color: var(--ink); font-size: 0.82rem;
+  }
+  .auth-table tbody td:first-child {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem; color: var(--ink); font-weight: 500;
+  }
+
+  /* Numbered list for defences summary */
+  .verdict-list { list-style: none; padding: 0; margin: 1.2rem 0; }
+  .verdict-list li {
+    display: flex; gap: 0.9rem; align-items: flex-start;
+    padding: 0.4rem 0; border-bottom: 1px solid var(--rule);
+    font-size: 0.93rem; line-height: 1.55;
+  }
+  .verdict-list li:last-child { border-bottom: none; }
+  .verdict-list li .vnum {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem; color: var(--red);
+    min-width: 22px; padding-top: 0.2rem; flex-shrink: 0;
+  }
+  .verdict-fail {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.58rem; letter-spacing: 0.1em;
+    background: var(--red); color: #fff;
+    padding: 0.1rem 0.4rem; border-radius: 2px;
+    margin-left: 0.3rem; vertical-align: middle; white-space: nowrap;
+  }
+
+  /* Structural note box */
+  .structural-note {
+    background: var(--ink); color: rgba(250,250,247,0.88);
+    padding: 1.6rem 2rem; margin: 2.5rem 0;
+  }
+  .structural-note .sn-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.64rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--red); margin-bottom: 0.8rem;
+  }
+  .structural-note p { font-size: 0.93rem !important; color: rgba(250,250,247,0.88) !important; margin-bottom: 0.9rem !important; }
+  .structural-note p:last-child { margin-bottom: 0 !important; }
+
+  /* References */
+  .references { border-top: 2px solid var(--rule); margin-top: 3rem; padding-top: 2rem; }
+  .references-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--red); margin-bottom: 1rem;
+  }
+  .references ol { padding-left: 1.4rem; }
+  .references ol li {
+    font-size: 0.78rem; line-height: 1.55; color: var(--muted); margin-bottom: 0.5rem;
+  }
+  .references ol li a { color: var(--red); text-decoration: none; }
+  .references ol li a:hover { text-decoration: underline; }
+
+  /* Footer */
+  .site-footer {
+    background: var(--ink); color: rgba(250,250,247,0.5);
+    text-align: center; padding: 2rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem; letter-spacing: 0.08em; text-transform: uppercase;
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 600px) {
+    .masthead-nav a:not(.subscribe-btn) { display: none; }
+    .section-ghost { font-size: 4.5rem; left: -0.5rem; }
+    .cover h1 { font-size: 1.8rem; }
+    .case-meta-key { min-width: 130px; font-size: 0.6rem; }
+    .case-meta-val { font-size: 0.68rem; }
+    .auth-table { font-size: 0.75rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<header class="masthead">
+  <a class="masthead-pub" href="#">The Anglophone Blind Spot</a>
+  <nav class="masthead-nav">
+    <a href="#">Analysis</a>
+    <a href="#">Geopolitics</a>
+    <a href="#">Philippines</a>
+    <a href="#">Legal</a>
+    <a href="#" class="subscribe-btn">Subscribe</a>
+  </nav>
+</header>
+
+<!-- COVER -->
+<section class="cover">
+  <div class="kicker">Legal Appendix A · Philippines · International Criminal Court</div>
+  <h1>In the Matter of the ICC Arrest Warrant Against <em>Ronald Marapon Dela Rosa:</em> A Systematic Refutation of All Asserted Legal Defences</h1>
+  <p class="deck">Every defence advanced, or advanceable, against the warrant — examined in its strongest form and refuted on primary instruments, binding judicial precedent, and settled treaty law.</p>
+  <div class="byline-row">
+    <span class="byline">By <strong>Ivana Park</strong> · The Anglophone Blind Spot</span>
+    <span class="byline">14 May 2026</span>
+    <span class="doc-tag">Appendix to: The Senator Who Ran</span>
+  </div>
+</section>
+
+<!-- CASE METADATA -->
+<div class="case-meta">
+  <div class="case-meta-inner">
+    <div class="case-meta-title">Case Reference</div>
+    <div class="case-meta-row">
+      <div class="case-meta-key">Warrant Reference</div>
+      <div class="case-meta-val">GR No. 278747 / ICC-01/21 — Pre-Trial Chamber I</div>
+    </div>
+    <div class="case-meta-row">
+      <div class="case-meta-key">Warrant Issued</div>
+      <div class="case-meta-val">6 November 2025 (confidential); unsealed 11 May 2026</div>
+    </div>
+    <div class="case-meta-row">
+      <div class="case-meta-key">Charge</div>
+      <div class="case-meta-val">Crime against humanity of murder — Article 7(1)(a), Rome Statute</div>
+    </div>
+    <div class="case-meta-row">
+      <div class="case-meta-key">Mode of Liability</div>
+      <div class="case-meta-val">Indirect co-perpetrator — Article 25(3)(a), Rome Statute</div>
+    </div>
+    <div class="case-meta-row">
+      <div class="case-meta-key">Jurisdiction Period</div>
+      <div class="case-meta-val">3 July 2016 — 30 April 2018 (no fewer than 32 persons killed)</div>
+    </div>
+    <div class="case-meta-row">
+      <div class="case-meta-key">Domestic Petition</div>
+      <div class="case-meta-val">SC GR No. 278747 — TRO declined 13 May 2026</div>
+    </div>
+    <div class="case-meta-row">
+      <div class="case-meta-key">Status</div>
+      <div class="case-meta-val">Dela Rosa at large — departed Senate compound 14 May 2026, approx. 02:30</div>
+    </div>
+  </div>
+</div>
+
+<!-- KEY FINDINGS -->
+<div class="key-findings">
+  <div class="key-findings-inner">
+    <div class="key-findings-label">Summary Findings</div>
+    <ul>
+      <li>Ten distinct defences are identified and examined. All ten fail.</li>
+      <li>The jurisdictional argument (ICC withdrawal) has been litigated to final appellate determination and rejected — ICC Appeals Chamber, 22 April 2026.</li>
+      <li>The prior domestic authorisation argument conflates ICC surrender with extradition; Republic Act 9851 provides sufficient domestic authority without a Philippine court order.</li>
+      <li>The constitutional due process argument would, if accepted, render RA 9851 a nullity and contradict the Supreme Court's own 2021 ruling in <em>Pangilinan v. Cayetano</em>.</li>
+      <li>The Senate's legislative immunity defence fails on the face of the constitutional text: the immunity clause is expressly limited to offences carrying six years or less. Crimes against humanity carry life imprisonment.</li>
+      <li>The Senate protective custody claim has no constitutional or statutory basis. Five senators formally repudiated it in a Senate resolution.</li>
+      <li>The complementarity defence is foreclosed by the Philippine government's own admission that domestic prosecution was impossible due to destroyed evidence.</li>
+      <li>The political motivation defence is legally irrelevant to the validity of independent prosecutorial and judicial findings. The warrant predates current political events by months.</li>
+      <li>Structurally, the defences function not as arguments designed to prevail on the merits but as instruments of temporal delay against an enforcement mechanism that depends entirely on state cooperation.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- TOC -->
+<div class="toc-wrapper">
+  <nav class="toc">
+    <div class="toc-title">Contents</div>
+    <ol>
+      <li><a href="#s1">Preamble and Scope</a></li>
+      <li><a href="#s2">Governing Legal Instruments</a></li>
+      <li><a href="#s3">The Ten Defences — Systematic Refutation</a></li>
+      <li><a href="#s4">Cumulative Assessment</a></li>
+      <li><a href="#s5">Structural Observation: The Purpose of Losing Arguments</a></li>
+      <li><a href="#s6">Table of Authorities</a></li>
+    </ol>
+  </nav>
+</div>
+
+<!-- ARTICLE BODY -->
+<article class="article-body">
+
+  <!-- SECTION I -->
+  <div class="section-block" id="s1">
+    <div class="section-ghost">I</div>
+    <div class="section-header">
+      <span class="section-label">Section I</span>
+      <h2>Preamble and Scope</h2>
+    </div>
+
+    <p>This brief examines and systematically refutes every legal defence advanced, or plausibly advanceable, by Senator Ronald Marapon Dela Rosa in opposition to the arrest warrant issued against him by Pre-Trial Chamber I of the International Criminal Court on 6 November 2025 and unsealed on 11 May 2026.</p>
+
+    <p>The warrant charges Dela Rosa as an indirect co-perpetrator under Article 25(3)(a) of the Rome Statute for the crime against humanity of murder, committed at least between 3 July 2016 and the end of April 2018, resulting in no fewer than 32 identified killings in the Republic of the Philippines during his tenure as Chief of the Philippine National Police.</p>
+
+    <p>The defences addressed herein arise from: (a) Dela Rosa's formal petition before the Philippine Supreme Court, docketed as GR No. 278747, filed March 2025 and supplemented on 11 May 2026; (b) Senate Resolution No. 44, the "Filipino Protection from Extraordinary Rendition Resolution," adopted 17 March 2026; (c) public statements by Dela Rosa's lead counsel, Atty. Israelito Torreon; and (d) arguments derivable from first principles under Philippine constitutional law, international criminal law, and treaty law.</p>
+
+    <p>Each defence is stated in its strongest possible form before being refuted. No strawman construction has been employed. Citations are to primary instruments, binding judicial decisions, and authoritative legal commentary.</p>
+  </div>
+
+  <hr class="section-rule">
+
+  <!-- SECTION II -->
+  <div class="section-block" id="s2">
+    <div class="section-ghost">II</div>
+    <div class="section-header">
+      <span class="section-label">Section II</span>
+      <h2>Governing Legal Instruments</h2>
+    </div>
+
+    <p>The following instruments are operative in this matter. Detailed application is set out under each defence below.</p>
+
+    <table class="auth-table">
+      <thead>
+        <tr><th>Instrument</th><th>Relevance</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Rome Statute (1998) — Art. 7(1)(a)</td><td>Definition: crimes against humanity of murder</td></tr>
+        <tr><td>Rome Statute — Art. 17</td><td>Complementarity principle</td></tr>
+        <tr><td>Rome Statute — Art. 25(3)(a)</td><td>Mode of liability: indirect co-perpetrator</td></tr>
+        <tr><td>Rome Statute — Art. 58</td><td>Warrant issuance standard: reasonable grounds</td></tr>
+        <tr><td>Rome Statute — Art. 127</td><td>Obligations survive state withdrawal</td></tr>
+        <tr><td>ICC Appeals Chamber, 22 Apr 2026</td><td>Jurisdiction confirmed; withdrawal defence rejected</td></tr>
+        <tr><td>ICC Pre-Trial Chamber I, 6 Nov 2025</td><td>Warrant issued — probable cause finding</td></tr>
+        <tr><td>Vienna Convention on the Law of Treaties, Art. 70</td><td>Treaty obligations on termination</td></tr>
+        <tr><td>Republic Act No. 9851 (2009), Sec. 17</td><td>Domestic surrender mechanism — no prior court order required</td></tr>
+        <tr><td>1987 Constitution, Art. III Sec. 1</td><td>Due process clause (cited by defence)</td></tr>
+        <tr><td>1987 Constitution, Art. VI Sec. 11</td><td>Legislative immunity — limited to &lt;6-year offences</td></tr>
+        <tr><td>1987 Constitution, Art. VII Sec. 21</td><td>Treaty ratification — Rome Statute duly ratified</td></tr>
+        <tr><td><em>Pangilinan v. Cayetano</em>, GR 238875 (2021)</td><td>SC: obligations survive withdrawal; ICC jurisdiction intact</td></tr>
+        <tr><td>Senate Resolution No. 44 (2026)</td><td>"Protective custody" — no legal basis; repudiated by 5 senators</td></tr>
+        <tr><td>DOJ Statement, May 2026</td><td>RA 9851 operative; same basis as Duterte arrest</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr class="section-rule">
+
+  <!-- SECTION III -->
+  <div class="section-block" id="s3">
+    <div class="section-ghost">III</div>
+    <div class="section-header">
+      <span class="section-label">Section III</span>
+      <h2>The Ten Defences — Systematic Refutation</h2>
+    </div>
+
+    <!-- D1 -->
+    <div class="defence-block">
+      <div class="defence-header">
+        <span class="defence-number">Defence 01</span>
+        <span class="defence-title">The ICC has no jurisdiction because the Philippines withdrew from the Rome Statute in 2019</span>
+      </div>
+      <div class="defence-body">
+        <span class="sub-label">The Argument</span>
+        <p>The Philippines deposited its withdrawal notification on 17 March 2018. Withdrawal took effect one year later under Article 127(1). The Philippines is no longer a state party and bears no cooperation obligation. Any warrant against a Philippine national is an exercise of jurisdiction the court no longer holds.</p>
+        <span class="sub-label">Refutation</span>
+        <p>This argument has been litigated to final appellate determination and rejected. Article 127(2) of the Rome Statute states explicitly:</p>
+        <div class="citation">"A State shall not be discharged, by reason of its withdrawal, from the obligations arising from this Statute while it was a Party to the Statute... nor shall it prejudice in any way the continued consideration of any matter which was already under consideration by the Court prior to the date on which the withdrawal became effective."</div>
+        <p>The ICC Appeals Chamber confirmed on 22 April 2026 — nineteen days before the warrant was unsealed — that the court retains jurisdiction over all crimes committed on Philippine territory between 1 November 2011 and 16 March 2019, encompassing the entirety of the charged period. The chamber unanimously rejected this argument in <em>The Prosecutor v. Duterte</em>. The Philippine Supreme Court's own ruling in <em>Pangilinan v. Cayetano</em> (2021) separately holds that withdrawal "does not discharge a state party from the obligations it has incurred as a member." This argument is <em>res judicata</em> at both international and domestic appellate level.</p>
+      </div>
+      <div class="holding">
+        <span class="holding-label">Holding</span>
+        <span class="holding-text">FAILS. Jurisdiction over the membership period is confirmed at Appeals Chamber level. The argument has been litigated to finality and cannot be relitigated without contradicting binding precedent.</span>
+      </div>
+    </div>
+
+    <!-- D2 -->
+    <div class="defence-block">
+      <div class="defence-header">
+        <span class="defence-number">Defence 02</span>
+        <span class="defence-title">The Philippine Supreme Court must issue prior domestic judicial authorisation before any arrest can occur</span>
+      </div>
+      <div class="defence-body">
+        <span class="sub-label">The Argument</span>
+        <p>Counsel Torreon has argued before the Supreme Court that "any contemplated arrest, detention, custody, transfer, turnover, rendition, or surrender... shall, at the very least, be subject to prior Philippine judicial authorization and to the procedural safeguards embodied in the 2025 Rules on Extradition Proceedings." No domestic court has made a probable cause determination. Therefore no arrest is lawful.</p>
+        <span class="sub-label">Refutation</span>
+        <p>This argument rests on a category error: the conflation of surrender to an international tribunal with extradition to a foreign state. They are legally distinct proceedings.</p>
+        <p>Extradition involves one sovereign state requesting transfer from another, typically through bilateral treaty. Extradition proceedings properly trigger domestic judicial review. Surrender to the ICC is categorically different — the ICC is an international judicial body whose jurisdiction the Philippines voluntarily accepted by ratifying the Rome Statute. The Pre-Trial Chamber has already conducted a judicial assessment and found reasonable grounds. That finding <em>is</em> the judicial determination of probable cause. Requiring Philippine courts to re-run it is procedural duplication designed to create delay, not due process.</p>
+        <p>Republic Act 9851, Section 17 provides:</p>
+        <div class="citation">"The Philippines shall, to the extent possible, cooperate with requests for arrest and surrender made by a competent international court or tribunal in cases involving any of the crimes defined in this Act... The Philippines may surrender or extradite, as appropriate, any person charged or convicted of any crime defined herein."</div>
+        <p>The DOJ confirmed in May 2026 that RA 9851 constitutes sufficient domestic authority for surrender without a prior court order — the identical basis used for Duterte's transfer in March 2025. The 2025 Rules on Extradition cited by counsel govern extradition, not ICC surrender. They are inapplicable.</p>
+      </div>
+      <div class="holding">
+        <span class="holding-label">Holding</span>
+        <span class="holding-text">FAILS. ICC surrender and extradition are legally distinct. The Pre-Trial Chamber's probable cause finding is the operative judicial determination. RA 9851 provides domestic authority without a prior court order. The 2025 Extradition Rules do not apply.</span>
+      </div>
+    </div>
+
+    <!-- D3 -->
+    <div class="defence-block">
+      <div class="defence-header">
+        <span class="defence-number">Defence 03</span>
+        <span class="defence-title">The 1987 Constitution's due process clause bars surrender without domestic judicial clearance</span>
+      </div>
+      <div class="defence-body">
+        <span class="sub-label">The Argument</span>
+        <p>Article III, Section 1 of the 1987 Philippine Constitution provides that no person shall be deprived of liberty without due process of law. Surrendering Dela Rosa to the ICC without a Philippine court order is an unchecked executive act. This violates the constitutional separation of powers and the right to liberty.</p>
+        <span class="sub-label">Refutation</span>
+        <p>Constitutional due process is not violated when the government executes a surrender obligation arising from a treaty validly ratified under Article VII, Section 21 of the same Constitution. The Senate ratified the Rome Statute; the treaty is part of Philippine law. RA 9851 was enacted by Congress in implementation of that treaty. Executive enforcement of a legislative mandate implementing a constitutional treaty obligation is not a due process violation. It is the constitutional order functioning as designed.</p>
+        <p>The argument also proves too much. If it were correct, the Philippines could never cooperate with any international criminal tribunal, rendering RA 9851 a constitutional nullity — which the legislature that enacted it cannot have intended.</p>
+        <p>The argument contains an internal contradiction. Dela Rosa was a petitioner in the challenge to Duterte's March 2025 arrest, GR No. 278747. The Supreme Court declined to issue a TRO then; Duterte was transferred without a prior court order; the case remains pending without resolution adverse to the government. If constitutional due process categorically barred ICC surrender, the Supreme Court would have acted with urgency in March 2025. Its inaction is precedentially adverse to Dela Rosa's current position.</p>
+      </div>
+      <div class="holding">
+        <span class="holding-label">Holding</span>
+        <span class="holding-text">FAILS. Treaty obligations validly ratified are part of the constitutional order. RA 9851 is a valid legislative implementation. No prior court order is constitutionally required. The March 2025 Duterte transfer — unchallenged by TRO — is adverse precedent.</span>
+      </div>
+    </div>
+
+    <!-- D4 -->
+    <div class="defence-block">
+      <div class="defence-header">
+        <span class="defence-number">Defence 04</span>
+        <span class="defence-title">The complementarity principle requires the ICC to defer to Philippine domestic jurisdiction</span>
+      </div>
+      <div class="defence-body">
+        <span class="sub-label">The Argument</span>
+        <p>Article 17 of the Rome Statute provides that the ICC may exercise jurisdiction only when the state "is unwilling or unable genuinely to carry out the investigation or prosecution." Philippine courts exist and function. The state is neither unwilling nor unable. The ICC is therefore precluded from acting.</p>
+        <span class="sub-label">Refutation</span>
+        <p>The complementarity inquiry is not answered by showing that Philippine courts formally exist. Article 17(2) defines "unwilling" as encompassing proceedings "undertaken for the purpose of shielding the person concerned from criminal responsibility" or "conducted in a manner inconsistent with an intent to bring the person concerned to justice."</p>
+        <p>The factual record is dispositive. The Philippine government under Duterte actively shielded the drug war's architects. The PNP systematically destroyed operational records. Witnesses were killed, intimidated, or recanted. The DOJ under Marcos — having opened its own review — explicitly concluded that domestic accountability was impossible due to destroyed or absent evidence and formally ceded prosecution to the ICC. The government's own concession of domestic incapacity is the predicate for the complementarity finding in the prosecution's favour.</p>
+        <p>The Philippines filed a deferral request under Article 18(2) in November 2021 — acknowledging ICC jurisdiction — which was rejected by the court in June 2022 after finding domestic proceedings inadequate. The complementarity challenge has been litigated to finality at ICC appellate level in the Duterte proceedings and rejected.</p>
+      </div>
+      <div class="holding">
+        <span class="holding-label">Holding</span>
+        <span class="holding-text">FAILS. Complementarity is not satisfied by institutional existence. The Philippine government's own admission of domestic incapacity is dispositive. The Article 18(2) deferral rejection forecloses this argument.</span>
+      </div>
+    </div>
+
+    <!-- D5 -->
+    <div class="defence-block">
+      <div class="defence-header">
+        <span class="defence-number">Defence 05</span>
+        <span class="defence-title">Dela Rosa enjoys legislative immunity under Article VI, Section 11 of the 1987 Constitution</span>
+      </div>
+      <div class="defence-body">
+        <span class="sub-label">The Argument</span>
+        <p>Article VI, Section 11 of the 1987 Constitution provides that senators shall be privileged from arrest "in all offenses punishable by not more than six years imprisonment" during attendance at sessions and while going to and from the legislature. Dela Rosa is a sitting senator present at a Senate session on 11 May 2026.</p>
+        <span class="sub-label">Refutation</span>
+        <p>The argument fails on the face of the constitutional text it invokes. The immunity clause is expressly limited to offences punishable by <em>not more than six years</em>. The ICC warrant charges Dela Rosa with crimes against humanity. Under RA 9851, Sections 5 and 7, crimes against humanity carry a penalty of <em>reclusion perpetua</em> — 20 to 40 years imprisonment. The constitutional immunity is facially inapplicable.</p>
+        <p>Senate Resolution No. 44 cannot expand a constitutional privilege beyond its textual scope. A legislative body may not by resolution override the constitutional text that defines and limits its own members' immunity. This is not a contested proposition of constitutional law.</p>
+        <p>Furthermore, legislative immunity under Article VI, Section 11 was designed to protect legislators from politically motivated arrest by the executive during legislative activity. It was never construed, in any Philippine constitutional decision, as conferring immunity from valid international criminal process for crimes committed while exercising command authority over the national police.</p>
+      </div>
+      <div class="holding">
+        <span class="holding-label">Holding</span>
+        <span class="holding-text">FAILS. The immunity clause is expressly limited to offences carrying six years or less. Crimes against humanity carry reclusion perpetua. Senate Resolution No. 44 cannot expand a constitutional privilege beyond its stated textual scope.</span>
+      </div>
+    </div>
+
+    <!-- D6 -->
+    <div class="defence-block">
+      <div class="defence-header">
+        <span class="defence-number">Defence 06</span>
+        <span class="defence-title">The Senate may place Dela Rosa under "protective custody" as an exercise of institutional prerogative</span>
+      </div>
+      <div class="defence-body">
+        <span class="sub-label">The Argument</span>
+        <p>Senate President Cayetano declared Dela Rosa under "protective custody" following the NBI's attempted service on 11 May 2026. The Senate, as a co-equal branch, has inherent authority to protect its members from executive overreach and to preserve the integrity of its legislative functions.</p>
+        <span class="sub-label">Refutation</span>
+        <p>Five senators repudiated this in a formal resolution stating the chamber "possesses no constitutional or statutory authority to provide protective custody or sanctuary from lawful arrest, surrender, or judicial processes." This dissenting view is legally correct on every applicable instrument.</p>
+        <p>No provision of the 1987 Constitution grants the Senate authority to shelter members from criminal arrest. The immunity provisions of Article VI, Section 11 are specific and limited — they create no general power of sanctuary. Parliamentary privilege in no Westminster jurisdiction has ever been construed to permit the legislature to obstruct valid criminal process against its members.</p>
+        <p>Senate Resolution No. 44's characterisation of the ICC process as "extraordinary rendition" is legally incoherent. Extraordinary rendition is the extrajudicial, covert transfer of a person without legal process — the antithesis of what an ICC warrant represents. A formal judicial proceeding by a three-judge international chamber is not extraordinary rendition by any definition in international law.</p>
+        <p>The separation of powers argument cuts against the Senate. Obstructing the executive's cooperation with a valid international judicial warrant — while the executive is implementing a legislative mandate under RA 9851 — is itself constitutionally suspect. The Senate is attempting to prevent the executive from obeying the law the Senate enacted.</p>
+      </div>
+      <div class="holding">
+        <span class="holding-label">Holding</span>
+        <span class="holding-text">FAILS. No constitutional or statutory authority for Senate sanctuary exists. Senate Resolution No. 44 mischaracterises ICC process. The Senate's obstruction of an executive act mandated by legislation the Senate passed is itself constitutionally questionable.</span>
+      </div>
+    </div>
+
+    <!-- D7 -->
+    <div class="defence-block">
+      <div class="defence-header">
+        <span class="defence-number">Defence 07</span>
+        <span class="defence-title">The warrant violates due process because Dela Rosa has had no opportunity to contest the charges</span>
+      </div>
+      <div class="defence-body">
+        <span class="sub-label">The Argument</span>
+        <p>Due process requires notice and an opportunity to be heard before any deprivation of liberty. Dela Rosa has not appeared before the ICC, has not been represented in warrant proceedings, and has had no opportunity to challenge the evidentiary basis for his arrest. The warrant was issued <em>ex parte</em>. This violates fundamental fair trial guarantees.</p>
+        <span class="sub-label">Refutation</span>
+        <p>This argument conflates arrest with conviction and mistakes the procedural stage of proceedings. Arrest warrants are, by their nature, issued <em>ex parte</em> on the basis of probable cause. This is universal across legal systems, including the Philippines. Philippine Rules of Criminal Procedure provide for warrants to issue upon judicial finding of probable cause after <em>ex parte</em> assessment — no prior notice to the accused is required or appropriate, because prior notice would defeat the warrant's enforcement purpose.</p>
+        <p>The ICC warrant was issued pursuant to Article 58 of the Rome Statute, which requires the Pre-Trial Chamber to find "reasonable grounds to believe" the person committed the crimes — the international equivalent of probable cause. Three judges assessed the prosecution's material and made that finding. Due process at the arrest stage is satisfied.</p>
+        <p>Dela Rosa's rights to contest charges, challenge evidence, cross-examine witnesses, and present a defence arise after surrender — at the confirmation of charges hearing under Part V and at trial under Part VI of the Rome Statute. These rights are fully guaranteed. They follow from arrest. The argument, taken to its conclusion, would make all arrest warrants unconstitutional in all jurisdictions. No legal system accepts this.</p>
+      </div>
+      <div class="holding">
+        <span class="holding-label">Holding</span>
+        <span class="holding-text">FAILS. Arrest warrants are inherently ex parte. The Pre-Trial Chamber's finding satisfies probable cause. Adversarial rights arise at subsequent proceedings and are fully guaranteed under the Rome Statute.</span>
+      </div>
+    </div>
+
+    <!-- D8 -->
+    <div class="defence-block">
+      <div class="defence-header">
+        <span class="defence-number">Defence 08</span>
+        <span class="defence-title">Sovereignty: the Philippines cannot be compelled to surrender its own citizen to a foreign body</span>
+      </div>
+      <div class="defence-body">
+        <span class="sub-label">The Argument</span>
+        <p>The Philippines is a sovereign state. The surrender of a Filipino citizen to an international court without a Philippine court order is an affront to national sovereignty. No foreign body can compel the Philippines to hand over its own nationals.</p>
+        <span class="sub-label">Refutation</span>
+        <p>Sovereignty is not a licence to breach voluntarily assumed treaty obligations. The Philippines exercised its sovereignty when it ratified the Rome Statute in 2011. That exercise of sovereign will created binding obligations. A state cannot simultaneously invoke sovereignty to justify joining a treaty and invoke sovereignty to justify departing from the obligations that treaty creates when they become inconvenient for specific individuals.</p>
+        <p>The ICC is not a "foreign body" in the relevant sense. It is an international judicial institution created by a multilateral treaty to which the Philippines was party. Its jurisdiction was accepted by the Philippine Senate, ratified by the President, and upheld by the Supreme Court. Moreover, RA 9851 — a Philippine Act, enacted by Filipino legislators, signed by a Filipino president — provides the domestic legal basis for surrender. The Philippines is implementing its own law, not submitting to foreign compulsion.</p>
+        <p>The March 2025 Duterte transfer is dispositive: the Philippines surrendered its former president to the ICC. No sovereignty crisis resulted. The Philippines remains fully sovereign. Compliance with a treaty obligation voluntarily undertaken has never, in any jurisdiction, been held to constitute a sovereignty violation.</p>
+      </div>
+      <div class="holding">
+        <span class="holding-label">Holding</span>
+        <span class="holding-text">FAILS. Sovereignty is expressed through treaty ratification, not through breach. RA 9851 is Philippine law. Compliance with Philippine law is not a sovereignty violation. The Duterte transfer provides operative precedent.</span>
+      </div>
+    </div>
+
+    <!-- D9 -->
+    <div class="defence-block">
+      <div class="defence-header">
+        <span class="defence-number">Defence 09</span>
+        <span class="defence-title">The killings were lawful police operations — no crime against humanity occurred</span>
+      </div>
+      <div class="defence-body">
+        <span class="sub-label">The Argument</span>
+        <p>The drug war operations were lawful enforcement actions against armed suspects who resisted arrest. Deaths in the course of law enforcement are not crimes against humanity. The ICC is criminalising legitimate state security policy.</p>
+        <span class="sub-label">Refutation</span>
+        <p>The Pre-Trial Chamber assessed this claim in examining the warrant application and found it unsupported. The chamber's probable cause finding explicitly encompasses the determination that the killings constituted a "widespread and systematic attack against civilians pursuant to a state policy targeting alleged drug offenders" — the contextual elements of crimes against humanity under Article 7 of the Rome Statute. A widespread, systematic attack of this character cannot be characterised as routine law enforcement.</p>
+        <p>Available forensic evidence corroborates this finding: post-mortem analysis in documented cases revealed bound wrists, execution-style gunshot wounds, and absence of weapon residue on victims — inconsistent with police operations involving armed resistance, consistent with extrajudicial execution. The Philippine Senate's own hearings produced testimony establishing systematic kill operations. Nine domestic criminal convictions in a decade, from an estimated death toll in the tens of thousands, is itself evidentiary of systematic impunity rather than lawful enforcement.</p>
+        <p>The argument also misapprehends the mode of liability. Dela Rosa is charged as an indirect co-perpetrator under Article 25(3)(a) — for his alleged role in a common plan executed through and by means of others. The "lawful operations" characterisation speaks to the conduct of field officers. It does not address the command structure and common plan for which Dela Rosa bears alleged responsibility at the level charged.</p>
+      </div>
+      <div class="holding">
+        <span class="holding-label">Holding</span>
+        <span class="holding-text">FAILS. The Pre-Trial Chamber made a probable cause finding covering the contextual elements of crimes against humanity. The forensic and testimonial record in the public domain corroborates it. Dela Rosa's liability is alleged at the command-structure level, not for individual field executions.</span>
+      </div>
+    </div>
+
+    <!-- D10 -->
+    <div class="defence-block">
+      <div class="defence-header">
+        <span class="defence-number">Defence 10</span>
+        <span class="defence-title">The warrant is politically motivated — driven by Trillanes, the Marcos administration, and anti-Duterte forces</span>
+      </div>
+      <div class="defence-body">
+        <span class="sub-label">The Argument</span>
+        <p>Antonio Trillanes, a political opponent of Duterte and Dela Rosa, filed the original ICC complaint. The Marcos administration surrendered Duterte for political reasons. The warrant against Dela Rosa is a continuation of factional political warfare. The court has been weaponised by domestic political actors.</p>
+        <span class="sub-label">Refutation</span>
+        <p>The political motivations of complainants do not determine the legal validity of prosecutorial findings or judicial determinations. The ICC Office of the Prosecutor and Pre-Trial Chamber are independent of the parties who filed complaints. The prosecution conducted its own investigation, gathered its own evidence, and applied for a warrant based on independent assessment. The Pre-Trial Chamber independently assessed that material. Neither is accountable to Trillanes, Marcos, or any other political actor.</p>
+        <p>The ICC's conduct across this proceeding demonstrates institutional independence from political pressure. It rejected the Philippines' Article 18(2) deferral request despite diplomatic pressure. It maintained jurisdiction despite withdrawal. It issued a warrant in November 2025 — months before the current political crisis — while keeping it sealed, inconsistent with an institution responding to momentary political convenience.</p>
+        <p>The argument has a decisive temporal problem: if the warrant reflects a Marcos-Trillanes political coordination, one must account for why it was issued and sealed in November 2025, months before any of the current events, and why the charge architecture traces to evidence gathered before Marcos took office in 2022.</p>
+        <p>Finally: even if every political actor who contributed to the ICC's attention had done so for purely self-interested reasons, this is legally irrelevant to whether the crimes occurred. Motives of complainants cannot exculpate accused parties where independent evidence of criminal conduct is sufficient.</p>
+      </div>
+      <div class="holding">
+        <span class="holding-label">Holding</span>
+        <span class="holding-text">FAILS. Complainants' motives are irrelevant to independent judicial findings. The ICC has demonstrated institutional independence in this proceeding. The warrant predates current political events by months. Evidence of crimes is independent of those who surfaced it.</span>
+      </div>
+    </div>
+
+  </div><!-- end section III -->
+
+  <hr class="section-rule">
+
+  <!-- SECTION IV -->
+  <div class="section-block" id="s4">
+    <div class="section-ghost">IV</div>
+    <div class="section-header">
+      <span class="section-label">Section IV</span>
+      <h2>Cumulative Assessment</h2>
+    </div>
+
+    <p>No defence advanced by Dela Rosa, or advanceable from first principles, survives analytical scrutiny. The pattern of failure is consistent across categories:</p>
+
+    <ul class="verdict-list">
+      <li><span class="vnum">01</span><span>ICC jurisdiction (withdrawal) <span class="verdict-fail">FAILS</span> — litigated to appellate finality 22 April 2026</span></li>
+      <li><span class="vnum">02</span><span>Prior domestic court order <span class="verdict-fail">FAILS</span> — ICC surrender ≠ extradition; RA 9851 is sufficient</span></li>
+      <li><span class="vnum">03</span><span>Constitutional due process <span class="verdict-fail">FAILS</span> — treaty ratification is part of constitutional order; adverse SC precedent</span></li>
+      <li><span class="vnum">04</span><span>Complementarity <span class="verdict-fail">FAILS</span> — DOJ's own admission of incapacity forecloses it; deferral request rejected 2022</span></li>
+      <li><span class="vnum">05</span><span>Legislative immunity <span class="verdict-fail">FAILS</span> — expressly limited to &lt;6-year offences; crimes against humanity = reclusion perpetua</span></li>
+      <li><span class="vnum">06</span><span>Senate protective custody <span class="verdict-fail">FAILS</span> — no constitutional or statutory basis; repudiated by 5 senators</span></li>
+      <li><span class="vnum">07</span><span>Ex parte / fair trial <span class="verdict-fail">FAILS</span> — arrest warrants are universally ex parte; adversarial rights arise post-surrender</span></li>
+      <li><span class="vnum">08</span><span>Sovereignty <span class="verdict-fail">FAILS</span> — treaty ratification is the exercise of sovereignty; Duterte precedent is operative</span></li>
+      <li><span class="vnum">09</span><span>Lawful operations <span class="verdict-fail">FAILS</span> — Pre-Trial Chamber found probable cause on crimes against humanity elements; wrong mode of liability</span></li>
+      <li><span class="vnum">10</span><span>Political motivation <span class="verdict-fail">FAILS</span> — legally irrelevant; warrant predates political events; institutional independence demonstrated</span></li>
+    </ul>
+
+    <p>What remains when all defences are stripped away: a valid warrant by a three-judge chamber after independent probable cause assessment; a domestic statute providing the enforcement mechanism; a binding appellate ruling confirming jurisdiction; an adverse Supreme Court precedent; and an operative domestic transfer precedent from March 2025. No court — domestic or international — that has considered these arguments has accepted them.</p>
+
+    <div class="callout">
+      <p>The men demanding due process are the men who denied it to thousands of people killed on neighbourhood watchlists without charge, without trial, without legal remedy of any kind. The arguments are not without formal structure. Their moral architecture is hollow.</p>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <!-- SECTION V -->
+  <div class="section-block" id="s5">
+    <div class="section-ghost">V</div>
+    <div class="section-header">
+      <span class="section-label">Section V</span>
+      <h2>Structural Observation: The Purpose of Losing Arguments</h2>
+    </div>
+
+    <div class="structural-note">
+      <div class="sn-label">Analytical Note</div>
+      <p>This section departs from strict legal analysis to address the strategic function of the defences examined above. It is included because understanding that function is essential to assessing the situation correctly.</p>
+      <p>The ten defences were constructed by experienced Philippine constitutional lawyers and are, in the main, carefully assembled. They are not frivolous. They are wrong — but wrong in ways that require careful engagement, which is precisely their design purpose.</p>
+      <p>Each defence, even when defeated on the merits, produces delay. Each Supreme Court petition, even when denied, generates procedural suspension. Each TRO application, each supplemental motion, each 72-hour comment period — all consume institutional bandwidth and keep the situation in temporal suspension. In the three days between the warrant's unsealing and Dela Rosa's pre-dawn departure from the Senate compound, the defences had achieved their purpose: he was not arrested.</p>
+      <p>The defences function not primarily as arguments designed to prevail but as instruments of temporal warfare against an enforcement mechanism that depends entirely on state cooperation. The ICC has no police force. It cannot break down a legislature door. It can issue warrants and wait. Every day the Philippine state declines to act is a day the defences have succeeded, regardless of their legal merit.</p>
+      <p>The legal battle is partly a proxy for a political question: whether Marcos will direct enforcement or continue calibrated non-interference. The defences provide him procedural cover to do either. When the Supreme Court eventually rules — expected no earlier than June 2026 — that cover will narrow. Until then, and for every subsequent suspect, every argument that buys a day serves the same ultimate purpose. Understanding this does not change the legal analysis. The defences fail on the law regardless of why they are made. But it is essential to understanding what outcome their architects are actually seeking.</p>
+    </div>
+
+    <div class="pull-quote">
+      <p>"The system that let him walk out at 2:30 in the morning — the Senate, the Supreme Court's writing period, the Interior Secretary's assurance, the gates that were open — was not a failure of institutions. It was institutions performing their primary function: protecting the people who control them."</p>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+
+  <!-- SECTION VI -->
+  <div class="section-block" id="s6">
+    <div class="section-ghost">VI</div>
+    <div class="section-header">
+      <span class="section-label">Section VI</span>
+      <h2>Table of Authorities</h2>
+    </div>
+
+    <p style="font-family:'JetBrains Mono',monospace;font-size:0.7rem;color:var(--muted);margin-bottom:1rem;">International Instruments and Decisions</p>
+    <table class="auth-table">
+      <thead><tr><th>Authority</th><th>Provision / Decision</th><th>Relevance to Defences</th></tr></thead>
+      <tbody>
+        <tr><td>Rome Statute (1998)</td><td>Art. 7(1)(a)</td><td>Definition of crimes against humanity of murder — D9</td></tr>
+        <tr><td>Rome Statute</td><td>Art. 17</td><td>Complementarity — D4</td></tr>
+        <tr><td>Rome Statute</td><td>Art. 25(3)(a)</td><td>Indirect co-perpetration mode of liability — D9</td></tr>
+        <tr><td>Rome Statute</td><td>Art. 58</td><td>Warrant issuance standard (reasonable grounds) — D7</td></tr>
+        <tr><td>Rome Statute</td><td>Art. 127(2)</td><td>Obligations survive withdrawal — D1</td></tr>
+        <tr><td>ICC Appeals Chamber</td><td>Judgment on Jurisdiction, 22 Apr 2026</td><td>Confirms jurisdiction; rejects withdrawal — D1</td></tr>
+        <tr><td>ICC Pre-Trial Chamber I</td><td>Warrant, 6 Nov 2025 (unsealed 11 May 2026)</td><td>Probable cause finding — D7, D9</td></tr>
+        <tr><td>ICC Pre-Trial Chamber I</td><td>Article 18(2) Deferral Rejection, Jun 2022</td><td>Complementarity — D4</td></tr>
+        <tr><td>VCLT (1969)</td><td>Art. 70</td><td>Treaty obligations on termination — D1, D8</td></tr>
+      </tbody>
+    </table>
+
+    <p style="font-family:'JetBrains Mono',monospace;font-size:0.7rem;color:var(--muted);margin:1.8rem 0 1rem;">Philippine Domestic Authorities</p>
+    <table class="auth-table">
+      <thead><tr><th>Authority</th><th>Provision / Decision</th><th>Relevance to Defences</th></tr></thead>
+      <tbody>
+        <tr><td>Republic Act No. 9851 (2009)</td><td>Sec. 17</td><td>Domestic surrender mechanism — D2, D3, D8</td></tr>
+        <tr><td>1987 Constitution</td><td>Art. III, Sec. 1</td><td>Due process clause (cited by defence) — D3</td></tr>
+        <tr><td>1987 Constitution</td><td>Art. VI, Sec. 11</td><td>Legislative immunity (&lt;6-year limit) — D5</td></tr>
+        <tr><td>1987 Constitution</td><td>Art. VII, Sec. 21</td><td>Treaty ratification — D3, D8</td></tr>
+        <tr><td><em>Pangilinan v. Cayetano</em>, GR 238875</td><td>En Banc, 16 March 2021</td><td>ICC obligations survive withdrawal — D1, D3</td></tr>
+        <tr><td>Senate Resolution No. 44 (2026)</td><td>Senate, 17 March 2026</td><td>"Protective custody" — no legal basis — D6</td></tr>
+        <tr><td>DOJ Statement</td><td>May 2026</td><td>RA 9851 operative; same basis as Duterte — D2, D3</td></tr>
+        <tr><td>GR No. 278747 (pending)</td><td>SC — TRO declined 13 May 2026</td><td>All defences — SC declined immediate relief</td></tr>
+        <tr><td>Duterte Transfer Precedent</td><td>11 March 2025</td><td>Operative transfer under RA 9851 — D2, D3, D8</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- REFERENCES -->
+  <div class="references">
+    <div class="references-label">Primary Sources</div>
+    <ol>
+      <li>ICC Pre-Trial Chamber I, Warrant of Arrest for Ronald Marapon Dela Rosa, issued 6 November 2025, unsealed 11 May 2026. <a href="https://www.icc-cpi.int/news/situation-philippines-icc-judges-unseal-arrest-warrant-against-ronald-marapon-dela-rosa">icc-cpi.int</a></li>
+      <li>ICC Appeals Chamber, <em>The Prosecutor v. Rodrigo Roa Duterte</em>, Judgment on Jurisdiction, 22 April 2026. <a href="https://www.icc-cpi.int/news/icc-appeals-chamber-confirms-jurisdiction-duterte-case">icc-cpi.int</a></li>
+      <li>Supreme Court of the Philippines, GR No. 278747 — Resolution declining TRO, 13 May 2026.</li>
+      <li>Supreme Court of the Philippines, <em>Pangilinan v. Cayetano</em>, G.R. No. 238875, En Banc, 16 March 2021.</li>
+      <li>Republic Act No. 9851, Philippine Act on Crimes Against International Humanitarian Law, Genocide, and Other Crimes Against Humanity (2009).</li>
+      <li>Senate Resolution No. 44, "Filipino Protection from Extraordinary Rendition Resolution" (17 March 2026).</li>
+      <li>Senate Resolution (5 dissenting senators), repudiating protective custody, 12 May 2026.</li>
+      <li>DOJ Spokesperson, Statement on RA 9851 and ICC surrender mechanism, May 2026. <a href="https://globalnation.inquirer.net/322910/bato-dela-rosa-may-be-surrendered-to-icc-under-ph-law-doj">inquirer.net</a></li>
+      <li>UP Law Centre, "The Philippine Case in the ICC: Disentangling Kneejerk Challenges." <a href="https://lawcenter.law.upd.edu.ph/ICL/the-philippine-case-in-the-icc-disentangling-kneejerk-challenges/">lawcenter.law.upd.edu.ph</a></li>
+      <li>Rappler, "No immediate relief from SC on Bato Dela Rosa's ICC warrant," 13 May 2026. <a href="https://www.rappler.com/philippines/supreme-court-resolution-tro-bato-dela-rosa-icc-arrest-warrant-may-2026/">rappler.com</a></li>
+      <li>Philstar, "Evading arrest, Bato dela Rosa slips out of Senate after gunfire scare," 14 May 2026. <a href="https://www.philstar.com/headlines/2026/05/14/2527906/evading-arrest-bato-dela-rosa-exits-senate-premises-after-gunfire-scare">philstar.com</a></li>
+    </ol>
+  </div>
+
+  <p style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:var(--muted);border-top:1px solid var(--rule);padding-top:1.2rem;margin-top:2rem;font-style:italic;">Disclaimer: This document is an analytical brief prepared by The Anglophone Blind Spot for journalistic and research purposes. It does not constitute legal advice and does not represent the position of any party to the proceedings referenced herein. Primary instrument citations verified against public official sources as of 14 May 2026.</p>
+
+</article>
+
+<footer class="site-footer">
+  © 2026 The Anglophone Blind Spot · All Rights Reserved · Appendix A to: The Senator Who Ran
+</footer>
+
+</body>
+</html>
